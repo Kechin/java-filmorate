@@ -87,7 +87,7 @@ public class UserControllerTest {
         request = HttpRequest.newBuilder().uri(url).POST(body)
                 .header("Content-type", "application/json").build();
         actual = client.send(request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(actual.body());
+        System.out.println(actual.body());//OK
         Assert.assertEquals(false, actual.body().contains("name\":\" "));
     }
 }
