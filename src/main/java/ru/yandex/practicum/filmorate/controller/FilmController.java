@@ -14,6 +14,7 @@ import java.util.*;
 @RestController
 @Slf4j
 public class FilmController {
+    private boolean Isloo;
     private final LocalDate MIN_DATE=LocalDate.of(1895,12,28);
     private int id;
     private Map<Integer,Film> films = new HashMap<>();
